@@ -1,0 +1,24 @@
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --data amazonfix20
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='amazonfix20', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [9.2 s]. #user=16834, #item=30133, #train=252510, #cv=84170, #test=944442
+Init: NDCG = 
+[ 0.7211189   0.74848812  0.78508235  0.83399609  0.89853159]
+Iteration 0 [23.0 s]: loss = 9.3391 [11.0 s], NDCG = 
+[ 0.76253212  0.78126094  0.81112827  0.85424288  0.91167291]
+Iteration 1 [25.0 s]: loss = 0.8097 [11.7 s], NDCG = 
+[ 0.79371526  0.80898112  0.83615486  0.87365753  0.92302114]
+Iteration 2 [25.1 s]: loss = 0.6733 [11.6 s], NDCG = 
+[ 0.79902932  0.81476146  0.84114436  0.87841574  0.92536949]
+Iteration 3 [24.8 s]: loss = 0.6425 [10.7 s], NDCG = 
+[ 0.80098502  0.81499066  0.84228737  0.87861794  0.92569646]
+Iteration 4 [23.1 s]: loss = 0.6288 [11.0 s], NDCG = 
+[ 0.80088793  0.81520899  0.84246607  0.87931602  0.92588215]
+Iteration 5 [22.9 s]: loss = 0.6205 [10.7 s], NDCG = 
+[ 0.80125071  0.81544857  0.84296322  0.87935358  0.92600749]
+Iteration 6 [23.7 s]: loss = 0.6138 [11.2 s], NDCG = 
+[ 0.8001037   0.8152817   0.84243936  0.87939845  0.92582484]
+Test NDCG = 
+[ 0.79242831  0.79096757  0.78975877  0.78957684  0.79056276  0.79228908
+  0.7948376   0.79824067  0.80275523  0.80785627]
+
