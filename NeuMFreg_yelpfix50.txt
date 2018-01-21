@@ -22,3 +22,86 @@ Test NDCG =
 [ 0.75307701  0.74098142  0.7345545   0.73253991  0.73062977  0.73226553
   0.73414747  0.73820049  0.7418471   0.7467189 ]
 
+
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --data yelpfix50
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='yelpfix50', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [2.0 s]. #user=2522, #item=12922, #train=113490, #cv=12610, #test=167206
+Init: NDCG = 
+[ 0.61919136  0.66538575  0.71818063  0.78310664  0.8604674 ]
+Iteration 0 [5.5 s]: loss = 13.6352 [0.9 s], NDCG = 
+[ 0.65381631  0.69832975  0.74516485  0.8030801   0.87405321]
+Iteration 1 [4.0 s]: loss = 3.7454 [1.0 s], NDCG = 
+[ 0.69127128  0.7218374   0.76575106  0.82095663  0.88534605]
+Iteration 2 [3.2 s]: loss = 1.0416 [0.9 s], NDCG = 
+[ 0.72221276  0.74888985  0.79120132  0.83956767  0.89701031]
+Iteration 3 [3.4 s]: loss = 0.9383 [1.0 s], NDCG = 
+[ 0.73432638  0.76027828  0.80194396  0.84780532  0.90172504]
+Iteration 4 [3.3 s]: loss = 0.8913 [1.0 s], NDCG = 
+[ 0.74029852  0.76541153  0.80598025  0.85166897  0.90396547]
+Iteration 5 [3.6 s]: loss = 0.8637 [0.9 s], NDCG = 
+[ 0.74183316  0.76569142  0.80702569  0.85239661  0.90424336]
+Iteration 6 [3.7 s]: loss = 0.8467 [1.0 s], NDCG = 
+[ 0.74163874  0.76681523  0.80856716  0.85313818  0.90453559]
+Iteration 7 [3.7 s]: loss = 0.8363 [0.9 s], NDCG = 
+[ 0.74235331  0.76740724  0.80778141  0.85309524  0.90465313]
+Iteration 8 [3.9 s]: loss = 0.8299 [0.9 s], NDCG = 
+[ 0.74306788  0.76673358  0.80759143  0.85266177  0.90467957]
+Iteration 9 [6.1 s]: loss = 0.8256 [1.0 s], NDCG = 
+[ 0.74471021  0.76891951  0.80782149  0.85328851  0.90514322]
+Iteration 10 [6.9 s]: loss = 0.8228 [1.0 s], NDCG = 
+[ 0.74431236  0.76771366  0.8076129   0.85270599  0.90478215]
+Test NDCG = 
+[ 0.74625702  0.74064197  0.73252124  0.72994037  0.72845859  0.73031182
+  0.73218261  0.73627157  0.74047589  0.74581616]
+
+
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --data yelpfix50
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='yelpfix50', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [2.1 s]. #user=2522, #item=12922, #train=113490, #cv=12610, #test=167206
+Init: NDCG = 
+[ 0.61566357  0.66308237  0.7203101   0.78096005  0.86030137]
+Iteration 0 [7.9 s]: loss = 14.4226 [1.0 s], NDCG = 
+[ 0.65651697  0.69578273  0.74632327  0.80297661  0.87398023]
+Iteration 1 [6.1 s]: loss = 6.9311 [1.1 s], NDCG = 
+[ 0.66788215  0.70638313  0.75221117  0.80939019  0.87785951]
+Iteration 2 [6.2 s]: loss = 1.2880 [1.0 s], NDCG = 
+[ 0.70032683  0.7329259   0.77674157  0.82823346  0.88964691]
+Iteration 3 [7.3 s]: loss = 0.9959 [1.1 s], NDCG = 
+[ 0.72324625  0.75257826  0.79322819  0.84023653  0.89789269]
+Iteration 4 [6.2 s]: loss = 0.9250 [1.0 s], NDCG = 
+[ 0.73211274  0.75948508  0.80023959  0.84598082  0.90097161]
+Iteration 5 [5.8 s]: loss = 0.8866 [0.9 s], NDCG = 
+[ 0.7409534   0.76472026  0.80571762  0.85056609  0.90361351]
+Iteration 6 [3.2 s]: loss = 0.8617 [0.9 s], NDCG = 
+[ 0.74199712  0.76696962  0.80694477  0.85204051  0.90442313]
+Iteration 7 [4.8 s]: loss = 0.8457 [1.1 s], NDCG = 
+[ 0.73904163  0.76477583  0.80680783  0.85226907  0.90381353]
+Test NDCG = 
+[ 0.75253298  0.73994703  0.73528591  0.73205109  0.73028816  0.7318152
+  0.73489957  0.73768265  0.74160833  0.74641511]
+
+
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --data yelpfix50
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='yelpfix50', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [2.0 s]. #user=2522, #item=12922, #train=113490, #cv=12610, #test=167206
+Init: NDCG = 
+[ 0.62420871  0.66890137  0.72072375  0.78405565  0.86202941]
+Iteration 0 [5.5 s]: loss = 12.0623 [1.0 s], NDCG = 
+[ 0.66418918  0.70399895  0.749596    0.8067323   0.87662583]
+Iteration 1 [3.8 s]: loss = 1.8975 [0.9 s], NDCG = 
+[ 0.71311628  0.73867264  0.78282427  0.83131461  0.89282874]
+Iteration 2 [4.3 s]: loss = 0.9806 [0.9 s], NDCG = 
+[ 0.73328436  0.76056839  0.80058524  0.84660893  0.90146748]
+Iteration 3 [7.3 s]: loss = 0.9055 [1.0 s], NDCG = 
+[ 0.74182999  0.76780831  0.80690752  0.85162472  0.90445021]
+Iteration 4 [6.7 s]: loss = 0.8692 [1.1 s], NDCG = 
+[ 0.7433751   0.76885637  0.8090333   0.85334946  0.90513612]
+Iteration 5 [7.5 s]: loss = 0.8502 [1.0 s], NDCG = 
+[ 0.743073    0.76870819  0.80813914  0.8531368   0.9048983 ]
+Test NDCG = 
+[ 0.75694491  0.74298607  0.73727022  0.73494746  0.73280437  0.73349904
+  0.73566551  0.73912262  0.74326645  0.74794463]
+
