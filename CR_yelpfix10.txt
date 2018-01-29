@@ -1,0 +1,29 @@
+liurui@ubuntu:~/DeepRec$ KERAS_BACKEND=theano python CR/MLP.py --learner adam --lr 0.0001 --path Data/yelpfix10/
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=256000, epochs=100, latent_base='MF', layers='[64,32,16,8]', learner='adam', len_latent=32, lr=0.0001, path='Data/yelpfix10/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [6.7 s]. #user=13679, #item=12922, #user_train=273580, #cv=68395, #test=503353
+Init: 8.07,
+NDCG: [ 0.66586094  0.70021519  0.75079486  0.80905182  0.87551751]
+Iteration 0 [time for user: 4.3 s]: loss = 0.702358 [7.62 s]. 
+NDCG: [ 0.67895682  0.7113363   0.75793324  0.81404335  0.87967652]
+Iteration 1 [time for user: 2.2 s]: loss = 0.688704 [7.71 s]. 
+NDCG: [ 0.68797793  0.71635294  0.76294902  0.81815249  0.88227371]
+Iteration 2 [time for user: 1.8 s]: loss = 0.687035 [7.65 s]. 
+NDCG: [ 0.69234162  0.72062856  0.76526509  0.82007013  0.88374581]
+Iteration 3 [time for user: 1.9 s]: loss = 0.685998 [7.84 s]. 
+NDCG: [ 0.6955059   0.7225409   0.76639745  0.8209949   0.88464604]
+Iteration 4 [time for user: 1.9 s]: loss = 0.685041 [7.70 s]. 
+NDCG: [ 0.69536984  0.72271872  0.76746685  0.82146058  0.8848511 ]
+Iteration 5 [time for user: 1.8 s]: loss = 0.684138 [7.76 s]. 
+NDCG: [ 0.6955549   0.72353167  0.7673214   0.82209964  0.88503379]
+Iteration 6 [time for user: 1.9 s]: loss = 0.683547 [7.83 s]. 
+NDCG: [ 0.69560683  0.7237598   0.76811506  0.82247289  0.88519066]
+Iteration 7 [time for user: 1.9 s]: loss = 0.682889 [7.92 s]. 
+NDCG: [ 0.69773035  0.7250174   0.76842963  0.82288924  0.88565012]
+Iteration 8 [time for user: 2.0 s]: loss = 0.682177 [7.92 s]. 
+NDCG: [ 0.69716465  0.72466455  0.76879194  0.82342227  0.88563491]
+Test_NDCG:
+[ 0.67825196  0.67040026  0.6679049   0.66915225  0.67228806  0.6775028
+  0.6853478   0.69441291  0.7053258   0.71752503]
+
+
