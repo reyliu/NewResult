@@ -1,0 +1,40 @@
+liurui@ubuntu:~/DeepRec$ KERAS_BACKEND=theano python CR/MLP.py --learner adam --lr 0.0001 --path Data/moviefix30/ --batch_size_random 1280000
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=1280000, epochs=100, latent_base='MF', layers='[64,32,16,8]', learner='adam', len_latent=32, lr=0.0001, path='Data/moviefix30/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [352.8 s]. #user=49522, #item=8940, #user_train=29713200, #cv=247610, #test=7929676
+Init: 59.85,
+NDCG: [ 0.653601    0.68538047  0.73060026  0.78855551  0.86860415]
+Iteration 0 [time for user: 11.7 s]: loss = 0.663833 [58.76 s]. 
+NDCG: [ 0.74863623  0.78384223  0.82446466  0.86570719  0.91047383]
+Iteration 1 [time for user: 10.9 s]: loss = 0.648697 [70.21 s]. 
+NDCG: [ 0.75293269  0.78880645  0.82917957  0.8698568   0.91253428]
+Iteration 2 [time for user: 10.2 s]: loss = 0.644981 [69.55 s]. 
+NDCG: [ 0.75340787  0.79032519  0.830605    0.87095932  0.91304498]
+Iteration 3 [time for user: 10.8 s]: loss = 0.643393 [70.26 s]. 
+NDCG: [ 0.7546204   0.79146275  0.83220799  0.87205088  0.91360039]
+Iteration 4 [time for user: 10.5 s]: loss = 0.642673 [72.03 s]. 
+NDCG: [ 0.75577972  0.79210255  0.83308707  0.87301091  0.91402205]
+Iteration 5 [time for user: 10.6 s]: loss = 0.641466 [70.99 s]. 
+NDCG: [ 0.75603825  0.79270923  0.83373065  0.87354348  0.9142434 ]
+Iteration 6 [time for user: 10.7 s]: loss = 0.640477 [70.93 s]. 
+NDCG: [ 0.75632343  0.79270179  0.83372215  0.87374418  0.91429737]
+Iteration 7 [time for user: 9.5 s]: loss = 0.640296 [70.49 s]. 
+NDCG: [ 0.75651569  0.79341074  0.83440819  0.87417133  0.91453437]
+Iteration 8 [time for user: 9.7 s]: loss = 0.639829 [63.91 s]. 
+NDCG: [ 0.75730536  0.79360988  0.83433379  0.87416116  0.91462418]
+Iteration 9 [time for user: 9.6 s]: loss = 0.639066 [64.09 s]. 
+NDCG: [ 0.75805573  0.79413244  0.83483342  0.87462939  0.91488099]
+Iteration 10 [time for user: 9.6 s]: loss = 0.638960 [64.18 s]. 
+NDCG: [ 0.75751912  0.79443261  0.83500478  0.87477205  0.9149072 ]
+Iteration 11 [time for user: 9.7 s]: loss = 0.639101 [64.26 s]. 
+NDCG: [ 0.75821002  0.79456834  0.83524828  0.87487374  0.91502345]
+Iteration 12 [time for user: 9.6 s]: loss = 0.638454 [63.87 s]. 
+NDCG: [ 0.75831925  0.79491127  0.83526706  0.8749057   0.91509782]
+Iteration 13 [time for user: 9.6 s]: loss = 0.638761 [64.06 s]. 
+NDCG: [ 0.75897333  0.79541683  0.83558464  0.87525425  0.91530035]
+Iteration 14 [time for user: 9.7 s]: loss = 0.638161 [64.00 s]. 
+NDCG: [ 0.75816637  0.79482179  0.83510784  0.87510855  0.91505758]
+Test_NDCG:
+[ 0.72085972  0.71330573  0.70911578  0.70768063  0.70785337  0.70884193
+  0.71098405  0.71350641  0.71658013  0.72001337]
+
