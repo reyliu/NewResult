@@ -1,0 +1,35 @@
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --dataset amazonfix30
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='amazonfix30', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [13.8 s]. #user=11643, #item=30133, #train=291075, #cv=813521, #test=755306
+Init: NDCG = 
+[ 0.66902075  0.67306036  0.67414878  0.67602135  0.67763131]
+Iteration 0 [23.5 s]: loss = 8.0237 [53.7 s], NDCG = 
+[ 0.78656907  0.77713304  0.77272584  0.76890892  0.76623705]
+Iteration 1 [25.7 s]: loss = 0.7370 [54.3 s], NDCG = 
+[ 0.81017055  0.80487503  0.80113672  0.79764218  0.79521708]
+Iteration 2 [26.1 s]: loss = 0.6573 [53.8 s], NDCG = 
+[ 0.81195777  0.80725108  0.80378715  0.80054356  0.79882541]
+Iteration 3 [25.4 s]: loss = 0.6376 [59.0 s], NDCG = 
+[ 0.81014247  0.80439845  0.80014156  0.79787882  0.79631032]
+Test NDCG = 
+[ 0.84135518  0.83516449  0.83013999  0.82715506  0.82620319  0.82590408
+  0.82700088  0.82822099  0.83040733  0.83297466]
+
+
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --dataset amazonfix30 --epochs 3
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='amazonfix30', epochs=3, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [13.8 s]. #user=11643, #item=30133, #train=291075, #cv=813521, #test=755306
+Init: NDCG = 
+[ 0.66730414  0.66972266  0.67142135  0.67298345  0.675118  ]
+Iteration 0 [22.3 s]: loss = 7.9708 [53.8 s], NDCG = 
+[ 0.77640879  0.77211337  0.76747411  0.76452688  0.76258214]
+Iteration 1 [21.3 s]: loss = 0.7361 [49.6 s], NDCG = 
+[ 0.80989924  0.80515014  0.80138527  0.79807934  0.79622568]
+Iteration 2 [20.7 s]: loss = 0.6570 [49.7 s], NDCG = 
+[ 0.81135657  0.80753861  0.80293618  0.79993757  0.79794332]
+Test NDCG = 
+[ 0.83853619  0.8334412   0.82930138  0.82594296  0.82534752  0.8247066
+  0.82513643  0.82662577  0.82852157  0.83145942]
+

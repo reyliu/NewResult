@@ -1,0 +1,22 @@
+liurui@ubuntu:~/NeuMF_Regression$ KERAS_BACKEND=theano python MLP.py --learner adam --lr 0.0001 --dataset yelpfix30
+Using Theano backend.
+MLP arguments: Namespace(batch_size=256, batch_size_random=0, dataset='yelpfix30', epochs=100, layers='[64,32,16,8]', learner='adam', lr=0.0001, out=1, path='Data/', reg_layers='[0,0,0,0]', verbose=1) 
+Load data done [4.9 s]. #user=4837, #item=12922, #train=120925, #cv=24185, #test=258641
+Init: NDCG = 
+[ 0.63035917  0.67003741  0.7241578   0.78790381  0.86311923]
+Iteration 0 [7.5 s]: loss = 13.0239 [2.2 s], NDCG = 
+[ 0.66312618  0.695434    0.74240375  0.80058432  0.87336489]
+Iteration 1 [5.8 s]: loss = 2.7090 [2.1 s], NDCG = 
+[ 0.69749426  0.72501475  0.76695024  0.82090147  0.88576873]
+Iteration 2 [5.3 s]: loss = 1.0801 [2.2 s], NDCG = 
+[ 0.72533292  0.74998531  0.79008445  0.83942635  0.8964119 ]
+Iteration 3 [4.5 s]: loss = 0.9781 [2.5 s], NDCG = 
+[ 0.73578042  0.75783133  0.79870338  0.84673414  0.90035138]
+Iteration 4 [5.6 s]: loss = 0.9335 [2.2 s], NDCG = 
+[ 0.74075246  0.76211965  0.80309818  0.85018749  0.90237072]
+Iteration 5 [5.2 s]: loss = 0.9094 [2.1 s], NDCG = 
+[ 0.73654945  0.76335855  0.80341673  0.85049202  0.90206581]
+Test NDCG = 
+[ 0.74910869  0.73913089  0.73217264  0.72904405  0.72922739  0.73068416
+  0.7346529   0.74021261  0.74635198  0.7529113 ]
+
